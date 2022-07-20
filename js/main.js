@@ -13,6 +13,13 @@ $(()=>{
 
     $('li:nth-child(odd),li:last-child')
       .addClass('red-text');
+    
+    $('<li>')
+    .text($('input').val())
+    .appendTo('ul');
+    $('input')
+     .val('')
+     .focus();
  });
 
 });
